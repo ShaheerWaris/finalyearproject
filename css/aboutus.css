@@ -1,0 +1,64 @@
+body {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    background-color: #d6d6d6;
+    margin: 0;
+    padding: 0;
+}
+
+.firstdiv {
+    width: 100%;
+    height: auto;
+    background-color: #6e6b6b;
+}
+
+.container1 {
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #cfcfcf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+}
+
+.member {
+    margin-bottom: 40px;
+}
+
+.member img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member-details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.member-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.member-role {
+    font-style: italic;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.member-bio {
+    line-height: 1.4;
+}
+
+.section1 hr {
+    width: 15% !important;
+    opacity: 1;
+}

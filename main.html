@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Webpage</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+
+</head>
+
+<body>
+
+  <header class="header fixed-top overflow-hidden">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="main.html">
+          <img src="images/logo.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-right" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto  justify-content-space-around">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="main.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#updates">Future Updates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutUs.html">About US</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="contactus.html">
+                Contact Us
+              </a>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero1">
+      <h2>Preventing Deforestation using IoT</h2>
+      <button type="button" class="btn herobtn">
+        <a href="Details.html">
+          <h3> Explore more >> </h3>
+        </a>
+      </button>
+
+    </div>
+  </section>
+
+  <div id="alertBox" class="alert-box" style="display: none;">
+    <div class="alert-box-content">
+      <h2>Illegal activity detected!</h2>
+      <p>Stop the beep Sound</p>
+      <button id="alertBoxConfirm">OK</button>
+    </div>
+  </div>
+
+  <section>
+
+    <div id="map"></div>
+  </section>
+  <section>
+    <div class="digit"></div>
+  </section>
+
+  <section class="updates" id="updates">
+    <h2>Updates</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac orci lacus. Suspendisse vel dolor
+      ullamcorper, placerat mauris eget, tincidunt urna. Sed euismod risus ut pharetra cursus. Vestibulum
+      ullamcorper, metus vitae interdum fringilla, lectus orci rhoncus ante, sit amet dapibus eros dolor in
+      risus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nisi modi iste aliquid nihil
+      minus, nulla harum veniam animi facilis voluptatibus? Inventore excepturi beatae aliquam, laboriosam
+      deleniti itaque soluta rerum!
+    </p>
+  </section>
+
+
+
+  <footer>
+
+    <p>&copy; FYP project</p>
+
+  </footer>
+
+  <button id="showButton">Show Guide</button>
+  <div id="bottomBar" class="hidden">
+    <button id="hideButton">Hide Guide</button>
+    <div class="content">
+      <div class="greensignal">
+        <img src="nodes/green.png" alt="">
+        <p>Everything Normal</p>
+      </div>
+      <div class="redsignal">
+        <img src="nodes/red.png" alt="">
+        <p>Suspicious Activity</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+
+  <script src="js/googlemap.js"></script>
+
+  <script src="js/sensor.js"></script>
+
+  <script defer src="js/header.js"></script>
+
+
+
+</body>
+
+</html>
