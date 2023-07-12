@@ -48,6 +48,7 @@ var alertBoxConfirm = document.getElementById('alertBoxConfirm');
 alertBoxConfirm.addEventListener('click', function() {
 alertBox.style.display = 'none';
 audio.pause();
+    database.child("value").set(0);
 });
 }
 
