@@ -21,6 +21,7 @@ var database = firebase.database().ref("Sound Test");
 database.on("value", function(snapshot) {
 var data = snapshot.val();
 number = data.value;
+
 if (number > 0) {
 if (sensorcolor1) {
     sensorcolor1.setOptions({
@@ -28,6 +29,8 @@ if (sensorcolor1) {
         strokeColor: "#FF0000",
     });
     audio.play();
+    
+  
 }
 showAlertDialog() 
 } else {
@@ -41,16 +44,62 @@ audio.pause();
 });
 
 function showAlertDialog() {
-var alertBox = document.getElementById('alertBox');
-alertBox.style.display = 'flex';
+    var alertBox1 = document.getElementById('alertBox1');
+    var alertBox2 = document.getElementById('alertBox2');
+    var alertBox3 = document.getElementById('alertBox3');
+    var alertBoxes = [alertBox1, alertBox2, alertBox3];
+  
+    var selectedAlertBox = null;
+    var alertBoxText = "";
+  
+    switch (number) {
+      case 1:
+        selectedAlertBox = alertBox1;
+        alertBoxText = "Axe sound detected!";
+        break;
+      case 2:
+        selectedAlertBox = alertBox2;
+        alertBoxText = "Handsaw sound detected!";
+        break;
+      case 3:
+        selectedAlertBox = alertBox3;
+        alertBoxText = "Chainsaw sound detected!";
+        break;
+      default:
+        selectedAlertBox = alertBox1;
+        alertBoxText = "Illegal Activity detected!";
+        break;
+    }
+  
+    var alertBoxConfirm = selectedAlertBox.querySelector('.alertBoxConfirm');
+    var alertBoxContent = selectedAlertBox.querySelector('.alert-box-content');
+    var alertBoxContentText = alertBoxContent.querySelector('h2');
+    alertBoxContentText.innerText = alertBoxText;
+  
+    selectedAlertBox.style.display = 'flex';
+  
+    alertBoxConfirm.addEventListener('click', function() {
+      selectedAlertBox.style.display = 'none';
+      audio.pause();
+      database.child("value").set(0);
+    });
+  }
+  
 
-var alertBoxConfirm = document.getElementById('alertBoxConfirm');
-alertBoxConfirm.addEventListener('click', function() {
-alertBox.style.display = 'none';
-audio.pause();
-    database.child("value").set(0);
-});
-}
+
+
+// function showAlertDialog() {
+// var alertBox = document.getElementById('alertBox');
+// alertBox.style.display = 'flex';
+
+// var alertBoxConfirm = document.getElementById('alertBoxConfirm');
+// alertBoxConfirm.addEventListener('click', function() {
+// alertBox.style.display = 'none';
+// audio.pause();
+// database.child("value").set(0);
+// });
+
+// }
 
 
 
