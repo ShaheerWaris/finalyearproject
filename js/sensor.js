@@ -165,9 +165,9 @@ fillOpacity: 0.35,
 bermudaTriangle.setMap(map);
 
 let sensorcolor = new google.maps.Circle({
+   
 
-
-center: new google.maps.LatLng(30.253163691583314,  67.06014642604015),
+center: new google.maps.LatLng(30.25302629461998,  67.05840404235916),
 radius: 12,
 
 strokeColor: "#4CAF50",
@@ -181,8 +181,8 @@ sensorcolor.setMap(map);
 
 
 sensorcolor1 = new google.maps.Circle({
-
-center: new google.maps.LatLng(30.252987606058745,  67.06030735856493),
+   
+center: new google.maps.LatLng(30.252067741064746,  67.05970207420022),
 radius: 12,
 strokeColor: "#4CAF50",
 strokeOpacity: 0.8,
@@ -211,8 +211,8 @@ sensorcolor1.setMap(map);
 
 
 let sensorcolor2 = new google.maps.Circle({
-
-center: new google.maps.LatLng(30.25319960372414, 67.06039721255134),
+    
+center: new google.maps.LatLng(30.252301058074273, 67.06130523669316),
 radius: 12,
 strokeColor: "#4CAF50",
 strokeOpacity: 0.8,
@@ -225,7 +225,7 @@ sensorcolor2.setMap(map);
 
 let sensorcolor3 = new google.maps.Circle({
 
-center: new google.maps.LatLng(30.25316415484756, 67.0601546255427),
+center: new google.maps.LatLng(30.25331119314579, 67.06005383261788),
 radius: 12,
 strokeColor: "#4CAF50",
 strokeOpacity: 0.8,
@@ -238,7 +238,7 @@ sensorcolor3.setMap(map);
 
 let sensorcolor4 = new google.maps.Circle({
 
-center: new google.maps.LatLng(30.253404650210715, 67.06033954506988),
+center: new google.maps.LatLng(30.25352466440812, 67.0616819648609),
 radius: 12,
 strokeColor: "#4CAF50",
 strokeOpacity: 0.8,
@@ -252,8 +252,8 @@ sensorcolor4.setMap(map);
 let circles = [sensorcolor, sensorcolor1, sensorcolor2, sensorcolor3, sensorcolor4];
 
 // Define the two radius points
-let radius1 = 12;
-let radius2 = 16;
+let radius1 = 80;
+let radius2 = 90;
 let currentRadius = radius1;
 let targetRadius = radius2;
 let radiusStep = 0.5; // Radius step size
@@ -280,7 +280,7 @@ circle.setRadius(currentRadius);
 }
 
 function startRadiusAnimation() {
-setInterval(updateRadius, 100); // Update radius more frequently for smoother animation (adjust interval as needed)
+setInterval(updateRadius, 40); // Update radius more frequently for smoother animation (adjust interval as needed)
 }
 
 startRadiusAnimation();
