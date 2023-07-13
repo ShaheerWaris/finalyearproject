@@ -1,5 +1,5 @@
 body{
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -25,7 +25,7 @@ background-size: cover;
 .hero1 h2{
 
     font-size: 70px;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -145,7 +145,7 @@ section:first-child {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 800px;
+    height: 100vh;
     background-image: url(../images/forest.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -153,11 +153,20 @@ section:first-child {
 }
 .updates h2{
     font-size: 70px;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.updates hr{
+  border: 2px solid green;
+  background-color: green;
+  z-index: 1001;
+  width: 20%;
+  opacity: calc(1);
 }
 .updates p{
     width: 60%;
     text-align: center;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
 }
 
 #showButton {
