@@ -69,13 +69,7 @@ nav ul li a:hover {
   transition: 0.3s;
 }
 
-/* section {
-  padding: 20px;
-}
 
-section:first-child {
-  display: flex;
-} */
 
 .left {
   flex-basis: 50%;
@@ -135,6 +129,7 @@ height:100%
 
 
 #showButton {
+  font-family: 'Poppins', sans-serif;
   background-color: #4CAF50;
   /* Set the background color */
   border: none;
@@ -160,10 +155,12 @@ height:100%
 }
 
 #showButton:hover {
+  font-family: 'Poppins', sans-serif;
   background-color: #45a049;
 }
 
 #hideButton {
+  font-family: 'Poppins', sans-serif;
   background-color: #4CAF50;
   /* Set the background color */
   border: none;
@@ -186,11 +183,12 @@ height:100%
 }
 
 #hideButton:hover {
+  font-family: 'Poppins', sans-serif;
   background-color: #45a049;
 }
 
 #bottomBar {
-
+  font-family: 'Poppins', sans-serif;
   position: fixed;
   bottom: 0;
   width: 100%;
