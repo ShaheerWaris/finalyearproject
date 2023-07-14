@@ -1,5 +1,5 @@
 body {
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #d6d6d6;
     margin: 0;
     padding: 0;
@@ -8,14 +8,14 @@ body {
 .firstdiv {
     width: 100%;
     height: auto;
-    background-color: #6e6b6b;
+    background-color: #f0f0f0;
 }
 
 .container1 {
     max-width: 800px;
     margin: 0px auto;
     padding: 20px;
-    background-color: #cfcfcf;
+    background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -24,38 +24,18 @@ h1 {
     color: #333333;
 }
 
-.member {
-    margin-bottom: 40px;
+.card{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+
+  cursor: pointer;
 }
 
-.member img {
-    display: block;
-    margin: 0 auto;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.member-details {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.member-name {
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.member-role {
-    font-style: italic;
-    color: #666666;
-    margin-bottom: 10px;
-}
-
-.member-bio {
-    line-height: 1.4;
+.card:hover{
+     transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
 .section1 hr {
