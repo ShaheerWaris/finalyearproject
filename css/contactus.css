@@ -1,48 +1,84 @@
-body {
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-}
 
+    body {
+      
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+    }
+    
 nav {
+    font-family: 'Poppins', sans-serif;
     width: 100%;
-}
-
-
-.navbar-brand img {
-    height: 60px;
-    width: 60px;
-}
-
-.navbar-brand img:hover {
+  }
+  
+  .navbar {
+    background-color: #0e0e0e94;
+  }
+  
+  .navbar-brand img {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .navbar-brand img:hover {
     cursor: pointer;
     /* box-shadow: inset 0px 0px 10px #4CAF50;  */
-}
-
-header.scrolled {
-    background-color: rgb(104 104 104 / 29%);
-}
-
-.navbar,
-li {
+  }
+  
+  header {
+    font-family: 'Poppins', sans-serif;
+    z-index: 1001;
+  }
+  
+  .scrolled {
+    background-color: rgba(214, 212, 212, 0.29) !important;
+  }
+  
+  .transparent-bg {
+    background-color: transparent !important;
+  }
+  
+  .navbar,
+  li {
     margin-right: 50px;
-}
-
-
-nav ul li a:hover {
+  }
+  
+  nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid #4CAF50;
     transition: 0.3s;
-}
+  }
+  
 
-.transparent-bg {
-    background-color: transparent !important;
-}
+    .firstdiv {
+        width: 100%;
+        height: auto;
+        background-color: #f0f0f0;
+    }
+    
+    .container1 {
+        font-family: 'Poppins', sans-serif;
+        max-width: 800px;
+        margin: 0px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+        text-align: center;
+        color: #333333;
+    }
+    
+  
+    
+    .section1 hr {
+        width: 15% !important;
+        opacity: 1;
+    }
 
-.navbar {
-    background-color: #0e0e0e94;
-}
+
+
 
 .hero {
     display: flex;
