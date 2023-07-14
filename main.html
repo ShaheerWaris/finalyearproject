@@ -32,16 +32,15 @@ $(document).ready(function(){
       // Store hash
       var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+     
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
    
-        // Add hash (#) to URL when done scrolling (default click behavior)
+        
         window.location.hash = hash;
       });
-    } // End if
+    } 
   });
 });
 </script>
@@ -82,25 +81,18 @@ $(document).ready(function(){
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero1">
-      <h2>Preventing Deforestation using IoT</h2>
-      <button type="button" class="btn herobtn">
-        <a href="Details.html">
-          <h3> Explore more >> </h3>
-        </a>
-      </button>
-
+  <section class="bg-light section1of1 d-flex text-center" >
+    <div class="container-fluid justify-content-center d-flex flex-column">
+      <h1 class="display-5 fw-bold text-light ">Preventing Deforestation using IoT</h1>
+      <div>
+      <a class="btn btn-primary btnsection1of1  " href="Details.html" role="button">Explore More >></a>
     </div>
+    
+    </div>
+
   </section>
 
-  <!-- <div id="alertBox" class="alert-box" style="display: none;">
-    <div class="alert-box-content">
-      <h2>Illegal Activity detected!</h2>
-      <p>Stop the beep Sound</p>
-      <button id="alertBoxConfirm">OK</button>
-    </div>
-  </div> -->
+
 
   <div id="alertBox1" class="alert-box" style="display: none;">
     <div class="alert-box-content">
@@ -126,7 +118,7 @@ $(document).ready(function(){
     </div>
   </div>
 
-  <section>
+  <section class="my-3">
 
     <div id="map"></div>
   </section>
@@ -134,16 +126,21 @@ $(document).ready(function(){
     <div class="digit"></div>
   </section>
 
-  <section class="updates" id="updates">
-    <h2>Future Updates</h2>
-    <hr>
-    <p>
+  <section class="bg-light updates " id="updates" >
+    <div class="container-fluid updates1of1 d-flex justify-content-center align-items-center flex-column py-4">
+      <h1 class="display-5 fw-bold text-light">Future Updates</h1>
+      <div class="hrpupdate  ">
+      
+    <p class="text-light">
       Enhance the security of the website by implementing robust measures to address its existing vulnerabilities. This
       includes establishing a separate database and implementing stringent security protocols to protect it from
       external threats.
     </p>
-  </section>
+  </div>
+    
+    </div>
 
+  </section>
 
 
   <footer>
@@ -167,17 +164,11 @@ $(document).ready(function(){
     </div>
   </div>
 
-
-
-
-
   <script src="js/googlemap.js"></script>
 
   <script src="js/sensor.js"></script>
 
   <script defer src="js/header.js"></script>
-
-
 
 </body>
 
